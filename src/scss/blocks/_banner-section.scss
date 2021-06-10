@@ -1,0 +1,166 @@
+.banner-section {
+   // .banner-section__container
+   &__container {
+   }
+   // .banner-section__inner
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+   }
+   // .banner-section__banner
+   &__banner {
+      flex: 0 1 870px;
+      min-width: 0;
+   }
+   // .banner-section__discount-item
+   &__discount-item {
+      flex: 0 0 265px;
+   }
+}
+
+.banner-slider {
+   // .banner-slider__container
+   &__container {
+   }
+   // .banner-slider__wrapper
+   &__wrapper {
+   }
+   // .banner-slider__item
+   &__item {
+      max-width: 100%;
+      img {
+         width: 100%;
+      }
+   }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.bunner-slider {
+   // .bunner-slider__pagination
+   &__pagination {
+   }
+   // .bunner-slider__button-prev
+   &__button-prev {
+   }
+   // .bunner-slider__button-next
+   &__button-next {
+   }
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+}
+.swiper-button-next {
+}
+.item-discont {
+   display: inline-flex;
+   flex-direction: column;
+   border: 1px solid #cdcdcd;
+   border-radius: 3px;
+   min-height: 400px;
+   // .item-discont__discont-label
+   &__discont-label {
+      position: relative;
+      &::before {
+         content: "акция";
+         position: absolute;
+         display: inline-block;
+         text-transform: uppercase;
+         color: #fff;
+         padding: 8px 20px;
+         background-color: $mainBlue;
+         font-size: 12px;
+         letter-spacing: 0.1em;
+      }
+   }
+   // .item-discont__body
+   &__body {
+      display: inline-flex;
+      flex-direction: column;
+      flex: 1 0 auto;
+   }
+   // .item-discont__top
+   &__top {
+      margin-left: auto;
+      margin-bottom: 7px;
+   }
+   //item-discont__content
+   &__content {
+      padding: 0 30px;
+      text-align: center;
+      margin-bottom: 7px;
+   }
+   // .item-discont__price
+   &__price {
+      margin-left: auto;
+      text-align: right;
+   }
+   // .item-discont__img
+   &__img {
+   }
+   // .item-discont__title
+   &__title {
+      max-width: 232px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 21px;
+   }
+   // .item-discont__footer
+   &__footer {
+      background: #f0f0f4;
+      border-radius: 3px;
+      text-align: center;
+      padding: 26px 20px;
+      font-size: 18px;
+      line-height: 21 / 18 * 100%;
+      span {
+         display: block;
+         color: #1c62cd;
+         font-weight: 700;
+      }
+   }
+}
+.price-discont {
+   font-family: "Barlow";
+   // .price-discont__new
+   &__new {
+      font-family: inherit;
+      font-weight: 700;
+      font-size: 27px;
+      line-height: 32 / 27 * 100%;
+      color: $mainBlue;
+      margin-right: 7px;
+      margin-bottom: 4px;
+      span {
+         margin-right: 6px;
+      }
+   }
+   // .price-discont__old
+   &__old {
+      line-height: 17px;
+      color: #c4c4c4;
+      margin-right: 4px;
+      span {
+         display: inline-block;
+         position: relative;
+         padding-right: 8px;
+         padding-top: 4px;
+         &::before {
+            content: "";
+            position: absolute;
+            display: inline-block;
+            width: 100%;
+            top: 50%;
+            bottom: 0;
+            right: 0;
+            background-color: #c4c4c4;
+            height: 2px;
+            transform: rotate(-13deg);
+         }
+      }
+   }
+}

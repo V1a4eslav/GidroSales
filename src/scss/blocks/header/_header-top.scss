@@ -1,0 +1,184 @@
+.header {
+   margin-bottom: 80px;
+   //header__container
+   &__container {
+   }
+   // .header__body
+   &__body {
+   }
+   // .header__top
+   &__top {
+   }
+}
+
+.top-header {
+   // .top-header__inner
+   &__inner {
+      // min-height: 122px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include adaptiv-value("min-height", 122, 67, 0);
+   }
+   //top-header__wrapper-menu
+   &__wrapper-menu {
+      display: flex;
+      align-items: center;
+   }
+   // .top-header__burger
+   &__burger {
+      @media (max-width: $md2+px) {
+         width: 34px;
+         margin-right: 10px;
+      }
+   }
+   // .top-header__menu
+   &__menu {
+   }
+   // .top-header__logo
+   &__logo {
+      align-self: center;
+      flex: 0 0 80px;
+   }
+   // .top-header__info
+   &__info {
+   }
+}
+
+.menu {
+   display: none;
+   @media (min-width: $md2+px) {
+      display: flex;
+      align-items: center;
+      // .menu__link
+      &__link {
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 24px;
+         @include adaptiv-value("margin-right", 50, 0, 1);
+         transition: all 0.3s ease 0s;
+         &:last-child {
+            margin-right: 0;
+         }
+         &:hover {
+            color: $mainBlue;
+         }
+      }
+   }
+}
+.logo {
+   max-width: 80px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin: 0 10px;
+   @media (min-width: $md2+px) {
+      &:hover {
+         .logo__text {
+            color: $mainBlue;
+         }
+      }
+   }
+   // .logo__icon
+   &__icon {
+      @media (max-width: 618px) {
+         display: none;
+      }
+   }
+   // .logo__text
+   &__text {
+      font-family: "Staatliches";
+      white-space: nowrap;
+      line-height: 25px;
+      font-size: 20px;
+      transition: all 0.3s ease 0s;
+   }
+}
+.info-header {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   //.info-header__adress
+   &__adress {
+      display: flex;
+      align-items: center;
+      @media (min-width: $md2+px) {
+         &:hover {
+            svg {
+               transform: scale(1.1) translate(0px, -4px);
+            }
+         }
+      }
+      @media (max-width: 618px) {
+         display: none;
+      }
+      svg {
+         transform: scale(1) translate(0px, -4px);
+         transition: all 0.3s ease 0s;
+      }
+   }
+   span {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+   }
+   // .info-header__user-elements
+   &__user-elements {
+      margin-left: 76px;
+      @media (max-width: $md3+px) {
+         margin-left: 30px;
+      }
+      @media (max-width: 618px) {
+         margin-left: 0;
+      }
+   }
+}
+.user-elements {
+   // .user-elements__chosen
+   &__chosen {
+      margin-left: 10px;
+      &:first-child {
+         margin-left: 0;
+      }
+   }
+   // .user-elements__user-icon
+   &__user-icon {
+      margin-left: 10px;
+   }
+   // .user-elements__basket
+   &__basket {
+      position: relative;
+      margin-left: 10px;
+      padding-right: 15px;
+      span {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 20px;
+         height: 20px;
+         background-color: $mainBlue;
+         border-radius: 50%;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         color: #fff;
+         font-weight: 500;
+         font-size: 10px;
+      }
+   }
+   &__chosen,
+   &__user-icon,
+   &__basket {
+      path {
+         transition: all 0.3s ease 0s;
+      }
+      @media (min-width: $md2+px) {
+         &:hover {
+            path {
+               fill: $mainBlue;
+            }
+         }
+      }
+   }
+}
