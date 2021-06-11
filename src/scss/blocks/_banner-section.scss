@@ -1,16 +1,26 @@
 .banner-section {
+   margin-bottom: 77px;
    // .banner-section__container
    &__container {
+      @media (max-width: 500px) {
+         width: 100%;
+         padding: 0;
+      }
    }
    // .banner-section__inner
    &__inner {
       display: flex;
       justify-content: space-between;
+      @media (max-width: $md1+px) {
+         display: block;
+         text-align: center;
+      }
    }
    // .banner-section__banner
    &__banner {
       flex: 0 1 870px;
       min-width: 0;
+      max-height: 400px;
    }
    // .banner-section__discount-item
    &__discount-item {
@@ -21,47 +31,79 @@
 .banner-slider {
    // .banner-slider__container
    &__container {
+      @media (max-width: $md1+px) {
+         max-width: 870px;
+         max-height: 400px;
+         margin: 0 auto;
+         margin-bottom: 40px;
+      }
    }
    // .banner-slider__wrapper
    &__wrapper {
    }
    // .banner-slider__item
    &__item {
-      max-width: 100%;
+      position: relative;
+      padding-bottom: 45.978%;
+      min-height: 164px;
+      max-height: 400px;
       img {
+         position: absolute;
          width: 100%;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         object-fit: cover;
       }
    }
-}
-.swiper-container {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
 }
 .bunner-slider {
    // .bunner-slider__pagination
    &__pagination {
+      .swiper-pagination-bullet {
+         width: 11px;
+         height: 11px;
+         background-color: transparent;
+         border-radius: 50%;
+         border: 1px solid #fff;
+      }
+      .swiper-pagination-bullet-active {
+         background-color: #fff;
+      }
+      .swiper-pagination-bullet-active-prev,
+      .swiper-pagination-bullet-active-next {
+         opacity: 0.5;
+      }
    }
    // .bunner-slider__button-prev
    &__button-prev {
+      &.swiper-button-disabled {
+         pointer-events: auto;
+      }
    }
    // .bunner-slider__button-next
    &__button-next {
+      transform: rotate(-180deg);
+      &.swiper-button-disabled {
+         pointer-events: auto;
+      }
+   }
+   &__button-prev::after,
+   &__button-next::after {
+      font-size: 0;
    }
 }
-.swiper-pagination {
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
-}
+
 .item-discont {
    display: inline-flex;
    flex-direction: column;
    border: 1px solid #cdcdcd;
    border-radius: 3px;
    min-height: 400px;
+   @media (max-width: $md1+px) {
+      max-width: 265px;
+   }
    // .item-discont__discont-label
    &__discont-label {
       position: relative;
