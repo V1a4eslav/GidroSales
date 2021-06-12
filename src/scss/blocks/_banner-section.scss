@@ -93,6 +93,12 @@
    &__button-next::after {
       font-size: 0;
    }
+   &__button-prev,
+   &__button-next {
+      @media (max-width: 500px) {
+         display: none;
+      }
+   }
 }
 
 .item-discont {
@@ -101,6 +107,13 @@
    border: 1px solid #cdcdcd;
    border-radius: 3px;
    min-height: 400px;
+   transition: all 0.3s ease 0s;
+   @media (min-width: $md2+px) {
+      &:hover {
+         box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+         border-radius: 3px;
+      }
+   }
    @media (max-width: $md1+px) {
       max-width: 265px;
    }

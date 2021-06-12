@@ -9,12 +9,19 @@ in ----->  import { naame } from './jjs';
 */
 
 
-//============== burger =================
-import { burger } from './burger/burger';
+//============== header =================
+import { burger } from './headerFunc/burger';
 burger();
-//============== burger =================
+import { headerBottomClick } from './headerFunc/headerBottomClick';
+headerBottomClick();
+//============== header =================
 
 //============== mainSliderSwiper =================
 import { mainBannerSwiper } from './swiper/swiper';
 mainBannerSwiper();
 //mainSliderSwiper=========== mainSliderSwiper ==============mainSliderSwiper
+
+//===============mainSearchTab================
+import { searchTabs } from './mainSearchTab/mainSeatchTab';
+searchTabs();
+//===============mainSearchTab================
