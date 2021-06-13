@@ -25,3 +25,18 @@ mainBannerSwiper();
 import { searchTabs } from './mainSearchTab/mainSeatchTab';
 searchTabs();
 //===============mainSearchTab================
+
+//===============TabspopularProduct================
+import { tabPopularProduct } from './TabPopularProduct/tabPopularProduct';
+tabPopularProduct();
+//===============TabspopularProduct================
+
+//============== mainSliderSwiper =================
+import { sliders } from './swiper/swiper';
+sliders();
+//mainSliderSwiper=========== mainSliderSwiper ==============mainSliderSwiper
+
+//================ Like ==========================
+import { like } from './TabPopularProduct/tabPopularProduct';
+like();
+//================ Like ==========================

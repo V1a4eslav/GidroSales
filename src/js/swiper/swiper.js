@@ -20,3 +20,34 @@ export function mainBannerSwiper() {
       },
    });
 }
+
+export function sliders() {
+   //основная функция для создания слайдеров
+   function createSlider(elemClass, config) {
+      const defaultConfig = {
+         slidesPerView: 4,
+         spaceBetween: 29,
+         observer: true,
+         observeParents: true,
+         observeSlideChildren: true,
+         keyboard: {
+            // Управление стрелками
+            onlyInViewport: true,
+         }
+      };
+      const sliderConfig = { ...defaultConfig, ...config };
+
+      new Swiper(elemClass, sliderConfig);
+   }
+   // далее уже готовим под каждый слайдер код
+   //PopularProduct
+   let contentItemProductsContainer = document.querySelectorAll('.content-item-products__container');
+   contentItemProductsContainer.forEach((slider, index) => {
+      createSlider(`.content-item-products__container_${index + 1}`, {
+         navigation: {
+            nextEl: `.popular-products__button-next_${index + 1}`,
+            prevEl: `.popular-products__button-prev_${index + 1}`
+         },
+      });
+   });
+}
