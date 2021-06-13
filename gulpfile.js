@@ -60,7 +60,7 @@ const htmlInclude = () => {
 // ===================================================
 // IMG ================= IMG ===================== IMG
 const imgToApp = () => {
-   return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/**/*.svg'])
+   return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg', './src/img/**/*.svg'])
       .pipe(dest('./app/img'));
 };
 // IMG ============================================ IMG
