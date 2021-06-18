@@ -25,15 +25,13 @@ export function sliders() {
    //основная функция для создания слайдеров
    function createSlider(elemClass, config) {
       const defaultConfig = {
-         slidesPerView: 4,
-         spaceBetween: 29,
          observer: true,
          observeParents: true,
          observeSlideChildren: true,
          keyboard: {
             // Управление стрелками
             onlyInViewport: true,
-         }
+         },
       };
       const sliderConfig = { ...defaultConfig, ...config };
 
@@ -48,6 +46,35 @@ export function sliders() {
             nextEl: `.popular-products__button-next_${index + 1}`,
             prevEl: `.popular-products__button-prev_${index + 1}`
          },
+         breakpoints: {
+            320: {
+               slidesPerView: 1,
+               centeredSlides: true,
+               centerInsufficientSlides: true,
+               centeredSlidesBounds: true,
+            },
+            420: {
+               slidesPerView: 1.3,
+            },
+            540: {
+               slidesPerView: 1.8,
+            },
+            640: {
+               slidesPerView: 2.1,
+            },
+            772: {
+               slidesPerView: 2.5,
+            },
+            992: {
+               slidesPerView: 3.3,
+            },
+            1191: {
+               slidesPerView: 4,
+               spaceBetween: 29,
+               centeredSlidesBounds: false,
+            }
+         },
+
       });
    });
 }

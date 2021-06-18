@@ -29,6 +29,7 @@
       display: flex;
       justify-content: space-between;
       padding: 20px 16px 9px 20px;
+      transition: all 0.3s ease 0s;
       @media (min-width: $md2+px) {
          &:hover {
             box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
