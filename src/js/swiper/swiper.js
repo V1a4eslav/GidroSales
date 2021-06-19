@@ -46,6 +46,10 @@ export function sliders() {
             nextEl: `.popular-products__button-next_${index + 1}`,
             prevEl: `.popular-products__button-prev_${index + 1}`
          },
+         pagination: {
+            el: `.popular-products__pagination_${index + 1}`,
+            dynamicBullets: true,
+         },
          breakpoints: {
             320: {
                slidesPerView: 1,
@@ -74,7 +78,6 @@ export function sliders() {
                centeredSlidesBounds: false,
             }
          },
-
       });
    });
 }
