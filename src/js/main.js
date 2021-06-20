@@ -21,22 +21,20 @@ import { mainBannerSwiper } from './swiper/swiper';
 mainBannerSwiper();
 //mainSliderSwiper=========== mainSliderSwiper ==============mainSliderSwiper
 
-//===============mainSearchTab================
-import { searchTabs } from './mainSearchTab/mainSeatchTab';
-searchTabs();
-//===============mainSearchTab================
 
-//===============TabspopularProduct================
-import { tabPopularProduct } from './TabPopularProduct/tabPopularProduct';
-tabPopularProduct();
-//===============TabspopularProduct================
-
-//============== mainSliderSwiper =================
+//============== OtherSliderSwiper =================
 import { sliders } from './swiper/swiper';
 sliders();
-//mainSliderSwiper=========== mainSliderSwiper ==============mainSliderSwiper
+//OtherSliderSwiper=========================OtherSliderSwiper
 
 //================ Like ==========================
-import { like } from './TabPopularProduct/tabPopularProduct';
+import { like } from './like/like';
 like();
 //================ Like ==========================
+
+//================ Tabs ==========================
+import { tabss } from './tabs/tabs';
+tabss();
+//================ Tabs ==========================
+
+

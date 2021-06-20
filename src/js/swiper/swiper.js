@@ -37,11 +37,11 @@ export function sliders() {
 
       new Swiper(elemClass, sliderConfig);
    }
-   // далее уже готовим под каждый слайдер код
-   //PopularProduct
-   let contentItemProductsContainer = document.querySelectorAll('.content-item-products__container');
+   // далее уже готовим под каждый слайдер код:
+   //================= PopularProduct =================
+   let contentItemProductsContainer = document.querySelectorAll('.popular-item-products__container');
    contentItemProductsContainer.forEach((slider, index) => {
-      createSlider(`.content-item-products__container_${index + 1}`, {
+      createSlider(`.popular-item-products__container_${index + 1}`, {
          navigation: {
             nextEl: `.popular-products__button-next_${index + 1}`,
             prevEl: `.popular-products__button-prev_${index + 1}`
@@ -80,4 +80,49 @@ export function sliders() {
          },
       });
    });
+   //END=============== PopularProduct =================END
+
+   //================= recomendationProduct =================
+   let recomendationContainer = document.querySelectorAll('.recomendation-item-products__container');
+   recomendationContainer.forEach((slider, index) => {
+      createSlider(`.recomendation-item-products__container_${index + 1}`, {
+         navigation: {
+            nextEl: `.recomendation-products__button-next_${index + 1}`,
+            prevEl: `.recomendation-products__button-prev_${index + 1}`
+         },
+         pagination: {
+            el: `.recomendation-products__pagination_${index + 1}`,
+            dynamicBullets: true,
+         },
+         breakpoints: {
+            320: {
+               slidesPerView: 1,
+               centeredSlides: true,
+               centerInsufficientSlides: true,
+               centeredSlidesBounds: true,
+            },
+            420: {
+               slidesPerView: 1.3,
+            },
+            540: {
+               slidesPerView: 1.8,
+            },
+            640: {
+               slidesPerView: 2.1,
+            },
+            772: {
+               slidesPerView: 2.5,
+            },
+            992: {
+               slidesPerView: 3.3,
+            },
+            1191: {
+               slidesPerView: 4,
+               spaceBetween: 29,
+               centeredSlidesBounds: false,
+            }
+         },
+      });
+   });
+   //END================= recomendationProduct =========================END
 }

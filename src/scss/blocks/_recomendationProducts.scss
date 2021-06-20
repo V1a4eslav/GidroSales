@@ -1,27 +1,26 @@
-.popular-products {
-   margin-bottom: 85px;
-   // .popular-products__container
+.recomendation-products {
+   margin-bottom: 90px;
+   // .recomendation-products__container
    &__container {
    }
-   // .popular-products__body
+   // .recomendation-products__body
    &__body {
    }
-   // .popular-products__title
+   // .recomendation-products__title
    &__title {
       margin-bottom: 10px;
    }
-   // .popular-products__tabs
+   // .recomendation-products__tabs
    &__tabs {
       margin-bottom: 25px;
       @media (max-width: 650px) {
          overflow-x: auto;
       }
    }
-   // .popular-products__contents
+   // .recomendation-products__contents
    &__contents {
-      margin-bottom: 36px;
    }
-   // .popular-products__item
+   // .recomendation-products__item
    &__item {
    }
    &__button-prev,
@@ -30,7 +29,7 @@
          display: none;
       }
    }
-   // .popular-products__button-prev
+   // .recomendation-products__button-prev
    &__button-prev {
       transform: translate(-50px, 0px);
       &::after {
@@ -44,7 +43,7 @@
          background-color: rgba(255, 255, 255, 0.685);
       }
    }
-   // .popular-products__button-next
+   // .recomendation-products__button-next
    &__button-next {
       transform: translate(50px, 0px);
       &::after {
@@ -61,29 +60,7 @@
          background-color: rgba(255, 255, 255, 0.685);
       }
    }
-   // .popular-products__button
-   &__button {
-      display: block;
-      text-align: center;
-      span {
-         display: inline-block;
-         font-size: 15px;
-         line-height: 18px;
-         text-align: center;
-         letter-spacing: 0.12em;
-         text-transform: uppercase;
-         background: #f0f0f4;
-         padding: 16px 43px;
-         transition: all 0.3s ease 0s;
-         @media (min-width: $md2+px) {
-            &:hover {
-               background: $mainColorText;
-               color: #f0f0f4;
-            }
-         }
-      }
-   }
-   //popular-products__pagination
+   // .recomendation-products__pagination
    &__pagination {
       display: none;
       @media (max-width: 992px) {
@@ -106,20 +83,20 @@
    }
 }
 
-.popular-item-products {
+.recomendation-item-products {
    display: none;
    &._active {
       position: relative;
       display: block;
    }
-   // .popular-item-products__container
+   // .recomendation-item-products__container
    &__container {
       padding: 5px 0px 19px 0;
    }
-   // .popular-item-products__wrapper
+   // .recomendation-item-products__wrapper
    &__wrapper {
    }
-   // .popular-item-products__item
+   // .recomendation-item-products__item
    &__item {
       @media (max-width: 420px) {
          text-align: center;
