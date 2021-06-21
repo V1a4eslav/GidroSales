@@ -270,4 +270,14 @@
 }
 .body-lock {
    overflow: hidden;
+   position: relative;
+   &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      min-height: 100%;
+      background-color: rgba(0, 0, 0, 0.281);
+      transition: all 0.3s ease 0s;
+      z-index: 8;
+   }
 }

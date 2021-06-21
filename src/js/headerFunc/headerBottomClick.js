@@ -8,7 +8,6 @@ export function headerBottomClick() {
             el.classList.remove('_active');
          });
          target.classList.add('_active');
-         console.log(target);
       }
    });
 }

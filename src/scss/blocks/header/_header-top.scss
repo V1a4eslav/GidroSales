@@ -5,6 +5,7 @@
    z-index: 10;
    //header__container
    &__container {
+      background-color: #fff;
    }
    // .header__body
    &__body {
@@ -15,14 +16,14 @@
 }
 
 .top-header {
+   position: relative;
    // .top-header__inner
    &__inner {
-      // min-height: 122px;
       display: flex;
-      background-color: #fff;
       align-items: center;
       justify-content: space-between;
-      min-height: 122px;
+      background-color: #fff;
+      @include adaptiv-value("min-height", 122, 67, 1);
    }
    //top-header__wrapper-menu
    &__wrapper-menu {

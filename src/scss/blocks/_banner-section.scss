@@ -1,5 +1,5 @@
 .banner-section {
-   padding-top: 202px;
+   @include adaptiv-value("padding-top", 256, 145, 1);
    margin-bottom: 77px;
    // .banner-section__container
    &__container {
