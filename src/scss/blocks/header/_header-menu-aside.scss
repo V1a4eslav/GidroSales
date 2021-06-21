@@ -1,0 +1,76 @@
+.header {
+   // .header__aside-menu
+   &__aside-menu {
+   }
+}
+.menu-asside {
+   // .menu-asside__adress
+   &__adress {
+   }
+}
+.menu-aside {
+   display: none;
+   @media (max-width: $md2+px) {
+      display: block;
+      position: fixed;
+      max-width: 295px;
+      z-index: 10;
+      width: 100%;
+      top: 122px;
+      left: -100%;
+      transition: all 0.3s ease 0s;
+      &._active {
+         left: 0;
+         overflow-y: auto;
+      }
+      // .menu-aside__list
+      &__list {
+         background-color: #fff;
+      }
+      // .menu-aside__link
+      &__link {
+         position: relative;
+         display: block;
+         padding: 38px 0 0 53px;
+         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+         font-size: 20px;
+         line-height: 24 /20 * 100%;
+         // .menu-aside__link_user
+         &_user {
+            background-image: url("../img/icon/aside-icon/user.svg");
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+         }
+         // .menu-aside__link_like
+         &_like {
+            background-image: url("../img/icon/aside-icon/user.svg");
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+         }
+         // .menu-aside__link_basket
+         &_basket {
+            background-image: url("../img/icon/aside-icon/user.svg");
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+         }
+         // .menu-aside__link_shop
+         &_shop {
+            background-image: url("../img/icon/aside-icon/user.svg");
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+         }
+         // .menu-aside__link_percent
+         &_percent {
+            background-image: url("../img/icon/aside-icon/user.svg");
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+         }
+         // .menu-aside__link_delivery
+         &_delivery {
+            background-image: url("../img/icon/aside-icon/user.svg");
+            background-position: 10px 100%;
+            background-repeat: no-repeat;
+         }
+      }
+   }
+}

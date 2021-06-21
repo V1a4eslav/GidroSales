@@ -1,5 +1,8 @@
 .header {
-   margin-bottom: 80px;
+   position: fixed;
+   width: 100%;
+   // margin-bottom: 80px;
+   z-index: 10;
    //header__container
    &__container {
    }
@@ -16,9 +19,10 @@
    &__inner {
       // min-height: 122px;
       display: flex;
+      background-color: #fff;
       align-items: center;
       justify-content: space-between;
-      @include adaptiv-value("min-height", 122, 67, 1);
+      min-height: 122px;
    }
    //top-header__wrapper-menu
    &__wrapper-menu {
