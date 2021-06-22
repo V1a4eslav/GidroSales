@@ -1,0 +1,19 @@
+.gidrocicles {
+   // .gidrocicles__container
+   &__container {
+   }
+   // .gidrocicles__inner
+   &__inner {
+   }
+   // .gidrocicles__title
+   &__title {
+      margin-bottom: 30px;
+      @media (max-width: $md4+px) {
+         margin-bottom: 25px;
+      }
+   }
+   // .gidrocicles__filter
+   &__filter {
+      margin-bottom: 47px;
+   }
+}

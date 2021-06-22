@@ -46,7 +46,7 @@ const styles = () => {
 // ===================================================
 // HTML ============= HTML ====================== HTML
 const htmlInclude = () => {
-   return src(['./src/**/index.html'])
+   return src(['./src/**/*.html'])
       .pipe(fileinclude({
          prefix: '@',
          basepath: '@file'

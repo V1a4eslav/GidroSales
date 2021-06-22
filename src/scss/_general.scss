@@ -1,4 +1,4 @@
-// ========================== Бургер ===========================
+// ========================== Бургер ====================================
 .burger-icon {
    height: 22px;
    position: relative;
@@ -46,8 +46,10 @@
       }
    }
 }
-// Бургер =================== Бургер ==================== Бургер
+// Бургер =================== Бургер ============================= Бургер
+//=======================================================================
 
+// ========================== Карточка товара ===========================
 .item-product {
    display: inline-flex;
    width: 271px;
@@ -203,7 +205,6 @@
    &__not-yet {
    }
 }
-
 .not-available {
    .not-yet {
       display: block;
@@ -238,7 +239,6 @@
       }
    }
 }
-
 .home-page-title {
    font-family: "Barlow", sans-serif;
    font-weight: 700;
@@ -268,6 +268,13 @@
       }
    }
 }
+// Карточка товара ======================================= Карточка товара
+//========================================================================
+
+// ====================== Полезные / Общие классы ========================
+.main {
+   flex: 1 1 auto;
+}
 .body-lock {
    overflow: hidden;
    position: relative;
@@ -281,3 +288,95 @@
       z-index: 8;
    }
 }
+.title-catalog {
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36 / 30 * 100%;
+}
+// Полезные / Общие классы ======================= Полезные / Общие классы
+// =======================================================================
+
+// ========================== Хлебные крошки =============================
+.breadcrumbs {
+   @include adaptiv-value("margin-top", 222, 153, 1);
+   margin-bottom: 41px;
+   // .breadcrumbs__container
+   &__container {
+   }
+   // .breadcrumbs__inner
+   &__inner {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+   }
+   // .breadcrumbs__item
+   &__item {
+      font-size: 15px;
+      line-height: 18px;
+      color: #c4c4c4;
+      &::after {
+         content: "";
+         display: inline-block;
+         background-image: url("../img/icon/arrow-right-icon.svg");
+         background-repeat: no-repeat;
+         width: 6px;
+         height: 10px;
+         background-position: right center;
+         background-size: 6px 10px;
+         margin: 0 10px;
+      }
+      &:last-child::after {
+         display: none;
+      }
+   }
+}
+// Хлебные крошки ========================================= Хлебные крошки
+//========================================================================
+
+// ======================= filter-top-catalog =======================
+
+.filter-top-catalog {
+   // .filter-top-catalog__inner
+   &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   // .filter-top-catalog__buttons
+   &__buttons {
+   }
+   // .filter-top-catalog__item
+   &__item {
+      color: #696a6e;
+      padding: 8px 25px;
+      background: #f0f0f4;
+      border-radius: 3px;
+      & + .filter-top-catalog__item {
+         margin-left: 8px;
+      }
+   }
+   // .filter-top-catalog__grid
+   &__grid {
+      display: flex;
+   }
+   // .filter-top-catalog__grid-select
+   &__grid-select {
+   }
+   // .filter-top-catalog__grid-buttons
+   &__grid-buttons {
+      margin-left: 34px;
+   }
+   // .filter-top-catalog__grid-button
+   &__grid-button {
+      & + .filter-top-catalog__grid-button {
+         margin-left: 10px;
+      }
+   }
+   // .filter-top-catalog__grid-all
+   &__grid-all {
+   }
+   // .filter-top-catalog__grid-line
+   &__grid-line {
+   }
+}
+// filter-top-catalog ============================ filter-top-catalog
