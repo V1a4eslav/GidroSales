@@ -8,37 +8,20 @@ in ----->  import { naame } from './jjs';
            naame();
 */
 
-
-//============== header =================
 import { burger } from './headerFunc/burger';
-burger();
 import { headerBottomClick } from './headerFunc/headerBottomClick';
-headerBottomClick();
-//============== header =================
-
-//============== mainSliderSwiper =================
 import { mainBannerSwiper } from './swiper/swiper';
-mainBannerSwiper();
-//mainSliderSwiper=========== mainSliderSwiper ==============mainSliderSwiper
-
-
-//============== OtherSliderSwiper =================
 import { sliders } from './swiper/swiper';
-sliders();
-//OtherSliderSwiper=========================OtherSliderSwiper
-
-//================ Like ==========================
 import { like } from './like/like';
-like();
-//================ Like ==========================
-
-//================ Tabs ==========================
 import { tabss } from './tabs/tabs';
-tabss();
-//================ Tabs ==========================
-
-
-//================ footerSpoller ==========================
 import { footerSpoller } from './footerSpoller/footerSpoller';
-footerSpoller();
-//================ footerSpoller ==========================
+
+window.addEventListener('load', () => {
+   burger();
+   headerBottomClick();
+   mainBannerSwiper();
+   sliders();
+   like();
+   tabss();
+   footerSpoller();
+});

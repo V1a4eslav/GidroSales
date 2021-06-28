@@ -16,4 +16,15 @@
    &__filter {
       margin-bottom: 47px;
    }
+   //gidrocicles__wrapper
+   &__wrapper {
+      display: flex;
+   }
+   //gidrocicles__main-filter
+   &__main-filter {
+      flex: 0 0 290px;
+   }
+   // .gidrocicles__grid
+   &__grid {
+   }
 }
