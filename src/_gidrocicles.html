@@ -52,9 +52,15 @@
                      <div class="tabs-filter__item _tabs-item">по марке</div>
                   </div>
                   <div class="filter-main__contents contents-filter">
+
+
+
+
+
                      <!-- левый фильтер -->
                      <div class="contents-filter__content-block _tabs-block _active">
                         <form action="#" name="parametersFilter" class="parameters-filter">
+
                            <div class="parameters-filter__availability availability">
                               <h5 class="parameters-filter__label availability__label">Наличие</h5>
                               <div class="availability__wrapper">
@@ -64,7 +70,7 @@
                                        <label for="#availability-1">В наличие</label>
                                     </div>
                                     <div class="availability__chackbox-item">
-                                       <input type="checkbox" name="availability" id="#availability-2">
+                                       <input type="checkbox" name="underTheOrder" id="#availability-2">
                                        <label for="#availability-2">Под заказ</label>
                                     </div>
                                  </div>
@@ -90,16 +96,40 @@
                                  </div>
                               </div>
                            </div>
+
+                           <div class="parameters-filter__price price-filter">
+                              <h5 class="parameters-filter__label price-filter__label">Цена</h5>
+                              <div class="price-filter__wrapper price-slider">
+                                 <div class="price-slider__inner">
+                                    <div class="price-slider__slider"></div>
+                                    <div class="price-slider__inputs">
+                                       <label class="price-slider__inputs-label">
+                                          <span class="price-slider__inputs-text">от</span>
+                                          <input class="price-slider__input price-slider__input_0" type="number" min="0"
+                                             max="2000000" placeholder="0">
+                                       </label>
+                                       <label class="price-slider__inputs-label">
+                                          <span class="price-slider__inputs-text">до</span>
+                                          <input class="price-slider__input price-slider__input_1" type="number" min="0"
+                                             max="2000000" placeholder="2000000">
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </form>
                      </div>
                      <!-- левый фильтер -->
                      <!-- ============= -->
 
 
+
+
                      <!-- правый фильтер -->
                      <div class="contents-filter__content-block _tabs-block">111</div>
                   </div>
                   <!-- правый фильтер -->
+                  <!-- ============= -->
                </div>
             </aside>
 

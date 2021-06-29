@@ -15,6 +15,7 @@ import { sliders } from './swiper/swiper';
 import { like } from './like/like';
 import { tabss } from './tabs/tabs';
 import { footerSpoller } from './footerSpoller/footerSpoller';
+import { noUiSliderMy } from './noUiSliderMy/noUiSliderMy';
 
 window.addEventListener('load', () => {
    burger();
@@ -24,4 +25,5 @@ window.addEventListener('load', () => {
    like();
    tabss();
    footerSpoller();
+   noUiSliderMy();
 });

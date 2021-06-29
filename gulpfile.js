@@ -70,7 +70,7 @@ const imgToApp = () => {
 // RESOURCES ========== RESOURCES =========== RESOURCES
 const resources = () => {
    return src(['./src/resources/**'])
-      .pipe(dest('./app'));
+      .pipe(dest('./app/resources'));
 };
 // RESOURCES ================================ RESOURCES
 // ====================================================
@@ -154,7 +154,10 @@ const scripts = () => {
       .pipe(browserSync.stream());
 };
 
-
+const libs = () => {
+   return src(['./src/js/libs/**'])
+      .pipe(dest('./app/js/libs'));
+};
 
 const watchFiles = () => {
    browserSync.init({
@@ -183,4 +186,4 @@ exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 
 
-exports.default = series(clean, parallel(htmlInclude, styles, scripts, resources, imgToApp), fonts, fontsStyle, watchFiles);
+exports.default = series(clean, parallel(htmlInclude, styles, scripts, libs, resources, imgToApp), fonts, fontsStyle, watchFiles);
