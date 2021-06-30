@@ -16,6 +16,7 @@ import { like } from './like/like';
 import { tabss } from './tabs/tabs';
 import { footerSpoller } from './footerSpoller/footerSpoller';
 import { noUiSliderMy } from './noUiSliderMy/noUiSliderMy';
+import { selects } from './selects/selects';
 
 window.addEventListener('load', () => {
    burger();
@@ -26,4 +27,5 @@ window.addEventListener('load', () => {
    tabss();
    footerSpoller();
    noUiSliderMy();
+   selects();
 });

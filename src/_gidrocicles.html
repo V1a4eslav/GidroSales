@@ -63,7 +63,7 @@
 
                            <div class="parameters-filter__availability availability">
                               <h5 class="parameters-filter__label availability__label">Наличие</h5>
-                              <div class="availability__wrapper">
+                              <div class="parameters-filter__wrapper availability__wrapper">
                                  <div class="availability__chackbox">
                                     <div class="availability__chackbox-item">
                                        <input type="checkbox" name="availability" id="#availability-1">
@@ -76,30 +76,28 @@
                                  </div>
                               </div>
                            </div>
-
                            <div class="parameters-filter__novelty novelty">
                               <h5 class="parameters-filter__label novelty__label">Новинки</h5>
-                              <div class="novelty__wrapper">
+                              <div class="parameters-filter__wrapper novelty__wrapper">
                                  <div class="novelty__chackbox">
                                     <div class="novelty__chackbox-item">
-                                       <input type="checkbox" name="novelty" id="#novelty-1">
+                                       <input type="radio" name="novelty" id="#novelty-1">
                                        <label for="#novelty-1">Все</label>
                                     </div>
                                     <div class="novelty__chackbox-item">
-                                       <input type="checkbox" name="novelty" id="#novelty-2">
+                                       <input type="radio" name="novelty" id="#novelty-2">
                                        <label for="#novelty-2">Новинки</label>
                                     </div>
                                     <div class="novelty__chackbox-item">
-                                       <input type="checkbox" name="novelty" id="#novelty-3">
+                                       <input type="radio" name="novelty" id="#novelty-3">
                                        <label for="#novelty-3">Акции</label>
                                     </div>
                                  </div>
                               </div>
                            </div>
-
                            <div class="parameters-filter__price price-filter">
                               <h5 class="parameters-filter__label price-filter__label">Цена</h5>
-                              <div class="price-filter__wrapper price-slider">
+                              <div class="parameters-filter__wrapper price-filter__wrapper price-slider">
                                  <div class="price-slider__inner">
                                     <div class="price-slider__slider"></div>
                                     <div class="price-slider__inputs">
@@ -117,6 +115,37 @@
                                  </div>
                               </div>
                            </div>
+                           <div class="parameters-filter__power power-filter">
+                              <h5 class="power-filter__label">Мощность, л.с.</h5>
+                              <div class="power-filter__select select-power select">
+                                 <div class="select-power__header select-header">
+                                    <span class="select-power__current select-current">90</span>
+                                 </div>
+                                 <div class="select-power__sub select-sub">
+                                    <div class="select-power__item select-item">90</div>
+                                    <div class="select-power__item select-item">130</div>
+                                    <div class="select-power__item select-item">154</div>
+                                    <div class="select-power__item select-item">230</div>
+                                    <div class="select-power__item select-item">300</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="parameters-filter__mustang mustang-filter">
+                              <h5 class="mustang-filter__label">Мощность двигателя, л.с.</h5>
+                              <div class="mustang-filter__select select-mustang select">
+                                 <div class="select-mustang__header select-header">
+                                    <span class="select-mustang__current select-current">90</span>
+                                 </div>
+                                 <div class="select-mustang__sub select-sub">
+                                    <div class="select-mustang__item select-item">90</div>
+                                    <div class="select-mustang__item select-item">130</div>
+                                    <div class="select-mustang__item select-item">154</div>
+                                    <div class="select-mustang__item select-item">230</div>
+                                    <div class="select-mustang__item select-item">300</div>
+                                 </div>
+                              </div>
+                           </div>
+
                         </form>
                      </div>
                      <!-- левый фильтер -->
