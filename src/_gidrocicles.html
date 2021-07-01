@@ -11,11 +11,17 @@
                   <button class="filter-top-catalog__item">еще</button>
                </div>
                <div class="filter-top-catalog__grid">
-                  <select class="filter-top-catalog__grid-select">
-                     <option value="">По полулярности</option>
-                     <option value="">По наличию</option>
-                     <option value="">По убыванию</option>
-                  </select>
+                  <div class="filter-top-catalog__grid-select grid-select select">
+                     <div class="grid-select__header select-header">
+                        <span class="grid-select__current select-current">По полулярности</span>
+                     </div>
+                     <div class="grid-select__sub select-sub">
+                        <div class="grid-select__sub-item select-item">По наличию</div>
+                        <div class="grid-select__sub-item select-item">По убыванию</div>
+                        <div class="grid-select__sub-item select-item">По популярности</div>
+                        <div class="grid-select__sub-item select-item">По цене</div>
+                     </div>
+                  </div>
                   <div class="filter-top-catalog__grid-buttons">
                      <button class="filter-top-catalog__grid-button filter-top-catalog__grid-all">
                         <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,8 +49,6 @@
             </div>
          </div>
          <div class="gidrocicles__wrapper">
-
-
             <aside class="gidrocicles__main-filter filter-main">
                <div class="filter-main__body _tabs">
                   <div class="filter-main__tabs tabs-filter">
@@ -52,16 +56,10 @@
                      <div class="tabs-filter__item _tabs-item">по марке</div>
                   </div>
                   <div class="filter-main__contents contents-filter">
-
-
-
-
-
                      <!-- левый фильтер -->
                      <div class="contents-filter__content-block _tabs-block _active">
                         <form action="#" name="parametersFilter" class="parameters-filter">
-
-                           <div class="parameters-filter__availability availability">
+                           <div class="parameters-filter__item parameters-filter__availability availability">
                               <h5 class="parameters-filter__label availability__label">Наличие</h5>
                               <div class="parameters-filter__wrapper availability__wrapper">
                                  <div class="availability__chackbox">
@@ -76,7 +74,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="parameters-filter__novelty novelty">
+                           <div class="parameters-filter__item parameters-filter__novelty novelty">
                               <h5 class="parameters-filter__label novelty__label">Новинки</h5>
                               <div class="parameters-filter__wrapper novelty__wrapper">
                                  <div class="novelty__chackbox">
@@ -95,7 +93,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="parameters-filter__price price-filter">
+                           <div class="parameters-filter__item parameters-filter__price price-filter">
                               <h5 class="parameters-filter__label price-filter__label">Цена</h5>
                               <div class="parameters-filter__wrapper price-filter__wrapper price-slider">
                                  <div class="price-slider__inner">
@@ -115,7 +113,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="parameters-filter__power power-filter">
+                           <div class="parameters-filter__item parameters-filter__power power-filter">
                               <h5 class="power-filter__label">Мощность, л.с.</h5>
                               <div class="power-filter__select select-power select">
                                  <div class="select-power__header select-header">
@@ -130,7 +128,7 @@
                                  </div>
                               </div>
                            </div>
-                           <div class="parameters-filter__mustang mustang-filter">
+                           <div class="parameters-filter__item parameters-filter__mustang mustang-filter">
                               <h5 class="mustang-filter__label">Мощность двигателя, л.с.</h5>
                               <div class="mustang-filter__select select-mustang select">
                                  <div class="select-mustang__header select-header">
@@ -145,15 +143,144 @@
                                  </div>
                               </div>
                            </div>
-
+                           <div class="parameters-filter__item parameters-filter__speed speed-filter">
+                              <h5 class="speed-filter__label">Макс. скорость</h5>
+                              <div class="speed-filter__select select-speed select">
+                                 <div class="select-speed__header select-header">
+                                    <span class="select-speed__current select-current">90</span>
+                                 </div>
+                                 <div class="select-speed__sub select-sub">
+                                    <div class="select-speed__item select-item">90</div>
+                                    <div class="select-speed__item select-item">130</div>
+                                    <div class="select-speed__item select-item">154</div>
+                                    <div class="select-speed__item select-item">230</div>
+                                    <div class="select-speed__item select-item">300</div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="parameters-filter__item parameters-filter__brend brend">
+                              <h5 class="parameters-filter__label brend__label">Бренд</h5>
+                              <div class="parameters-filter__wrapper brend__wrapper">
+                                 <div class="brend__chackbox">
+                                    <div class="brend__chackbox-item">
+                                       <input type="checkbox" name="brend1" id="#brend-1">
+                                       <label for="#brend-1">BRP</label>
+                                    </div>
+                                    <div class="brend__chackbox-item">
+                                       <input type="checkbox" name="brend2" id="#brend-2">
+                                       <label for="#brend-2">Spark 2</label>
+                                    </div>
+                                    <div class="brend__chackbox-item">
+                                       <input type="checkbox" name="brend3" id="#brend-3">
+                                       <label for="#brend-3">Spark 3 </label>
+                                    </div>
+                                 </div>
+                                 <button class="brend__btn">Показать еще</button>
+                              </div>
+                           </div>
+                           <div class="parameters-filter__item parameters-filter__model model">
+                              <h5 class="parameters-filter__label model__label">Модель</h5>
+                              <div class="parameters-filter__wrapper model__wrapper">
+                                 <div class="model__search">
+                                    <input class="model__search-input" type="search" name="search-model"
+                                       placeholder="Введите модель ">
+                                 </div>
+                                 <div class="model__chackbox">
+                                    <div class="model__chackbox-item">
+                                       <input type="checkbox" name="model1" id="#model-1">
+                                       <label for="#model-1">Sea-doo Spark 2</label>
+                                    </div>
+                                    <div class="model__chackbox-item">
+                                       <input type="checkbox" name="model2" id="#model-2">
+                                       <label for="#model-2">SeaDoo Spark 90</label>
+                                    </div>
+                                    <div class="model__chackbox-item">
+                                       <input type="checkbox" name="model3" id="#model-3">
+                                       <label for="#model-3">SeaDoo GTI 155</label>
+                                    </div>
+                                    <div class="model__chackbox-item">
+                                       <input type="checkbox" name="model4" id="#model-4">
+                                       <label for="#model-4">SeaDoo GTR 230</label>
+                                    </div>
+                                 </div>
+                                 <button class="model__btn">Показать еще</button>
+                              </div>
+                           </div>
+                           <div class="parameters-filter__item parameters-filter__discont discont">
+                              <h5 class="parameters-filter__label discont__label">Акции</h5>
+                              <div class="parameters-filter__wrapper discont__wrapper">
+                                 <div class="discont__chackbox">
+                                    <div class="discont__chackbox-item discont__chackbox-item_sale">
+                                       <input type="checkbox" name="discont1" id="#discont-1">
+                                       <label for="#discont-1">SALE</label>
+                                    </div>
+                                    <div class="discont__chackbox-item discont__chackbox-item_new">
+                                       <input disabled type="checkbox" name="discont2" id="#discont-2">
+                                       <label for="#discont-2">NEW</label>
+                                    </div>
+                                    <div class="discont__chackbox-item discont__chackbox-item_hit">
+                                       <input disabled type="checkbox" name="discont3" id="#discont-3">
+                                       <label for="#discont-3">HIT</label>
+                                    </div>
+                                    <div class="discont__chackbox-item discont__chackbox-item_diller">
+                                       <input type="checkbox" name="discont4" id="#discont-4">
+                                       <label for="#discont-4">ДИЛЕР</label>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="parameters-filter__item parameters-filter__countries countries">
+                              <h5 class="parameters-filter__label countries__label">Страны</h5>
+                              <div class="parameters-filter__wrapper countries__wrapper">
+                                 <div class="countries__chackbox">
+                                    <div class="countries__chackbox-item">
+                                       <input type="checkbox" name="countries1" id="#countries-1">
+                                       <label for="#countries-1">Россия</label>
+                                    </div>
+                                    <div class="countries__chackbox-item">
+                                       <input type="checkbox" name="countries2" id="#countries-2">
+                                       <label for="#countries-2">Китай</label>
+                                    </div>
+                                    <div class="countries__chackbox-item">
+                                       <input type="checkbox" name="countries3" id="#countries-3">
+                                       <label for="#countries-3">Германия</label>
+                                    </div>
+                                    <div class="countries__chackbox-item">
+                                       <input type="checkbox" name="countries4" id="#countries-4">
+                                       <label for="#countries-4">США</label>
+                                    </div>
+                                 </div>
+                                 <button class="countries__btn">Показать еще</button>
+                              </div>
+                           </div>
+                           <button class="parameters-filter__button">ВЫБРАТЬ</button>
+                           <div class="parameters-filter__select-yet select-yet select">
+                              <div class="select-yet__header select-header">
+                                 <span class="select-yet__current select-current">Дополнительные параметры</span>
+                              </div>
+                              <ul class="select-yet__list select-sub">
+                                 <li class="select-yet__option select-item">
+                                    <p>Дополнительные параметры</p>
+                                 </li>
+                                 <li class="select-yet__option select-item">
+                                    <p>1233</p>
+                                 </li>
+                                 <li class="select-yet__option select-item">
+                                    <p>34454</p>
+                                 </li>
+                                 <li class="select-yet__option select-item">
+                                    <p>fdfvf</p>
+                                 </li>
+                                 <li class="select-yet__option select-item">
+                                    <p>fgfgfgf</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <button class="parameters-filter__button-reset">Сбросить фильтр</button>
                         </form>
                      </div>
                      <!-- левый фильтер -->
                      <!-- ============= -->
-
-
-
-
                      <!-- правый фильтер -->
                      <div class="contents-filter__content-block _tabs-block">111</div>
                   </div>
@@ -161,8 +288,6 @@
                   <!-- ============= -->
                </div>
             </aside>
-
-
 
             <div class="gidrocicles__grid grid-products">
                <div class="grid-products__inner">
