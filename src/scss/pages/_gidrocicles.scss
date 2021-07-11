@@ -16,14 +16,39 @@
    &__filter {
       margin-bottom: 47px;
    }
+   //.gidrocicles__filter-btn-hidden
+   &__filter-btn-hidden {
+      display: none;
+      @media (max-width: 850px) {
+         display: block;
+         text-align: center;
+         font-size: 18px;
+         font-weight: 700;
+         background-color: $mainBlue;
+         color: #fff;
+         padding: 10px 0;
+         margin-bottom: 20px;
+         border-radius: 30px;
+         text-transform: uppercase;
+      }
+   }
    //gidrocicles__wrapper
    &__wrapper {
       display: flex;
+      @media (max-width: 850px) {
+         flex-wrap: wrap;
+      }
    }
    //gidrocicles__main-filter
    &__main-filter {
       flex: 0 0 290px;
       margin-right: 10px;
+      @media (max-width: 850px) {
+         flex: 0 0 100%;
+         overflow: hidden;
+         transition: all 0.5s ease-in-out 0s;
+         margin-bottom: 20px;
+      }
    }
    // .gidrocicles__grid
    &__grid {

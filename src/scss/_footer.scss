@@ -116,7 +116,6 @@
    // .footer__info-link-wrapper
    &__info-link-wrapper {
       @media (max-width: $md3+px) {
-         max-height: 0;
          overflow: hidden;
          transition: all 0.3s ease 0s;
       }

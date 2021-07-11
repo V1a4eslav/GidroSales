@@ -14,9 +14,10 @@ import { mainBannerSwiper } from './swiper/swiper';
 import { sliders } from './swiper/swiper';
 import { like } from './like/like';
 import { tabss } from './tabs/tabs';
-import { footerSpoller } from './footerSpoller/footerSpoller';
+import { spoller } from './Spoller/spoller';
 import { noUiSliderMy } from './noUiSliderMy/noUiSliderMy';
 import { selects } from './selects/selects';
+import { toggleGrid } from './toggleGrid/toggleGrid';
 
 window.addEventListener('load', () => {
    burger();
@@ -25,7 +26,8 @@ window.addEventListener('load', () => {
    sliders();
    like();
    tabss();
-   footerSpoller();
+   spoller();
    noUiSliderMy();
    selects();
+   toggleGrid();
 });
