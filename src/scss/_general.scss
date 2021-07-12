@@ -304,11 +304,13 @@
       display: flex;
       justify-content: flex-start;
       align-items: center;
+      flex-wrap: wrap;
    }
    // .breadcrumbs__item
    &__item {
       font-size: 15px;
       line-height: 18px;
+      white-space: nowrap;
       color: #c4c4c4;
       &::after {
          content: "";
@@ -719,6 +721,9 @@
    // .parameters-filter__select-yet
    &__select-yet {
       margin-bottom: 20px;
+      @media (max-width: 850px) {
+         display: none;
+      }
    }
    //parameters-filter__button-reset
    &__button-reset {

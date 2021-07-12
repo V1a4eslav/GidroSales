@@ -29,15 +29,17 @@ export function spoller() {
       const showingHeight = filterMainBody.offsetHeight;
       if (filterMobBtn.length === 0) return;
 
-      !filterMainBody.classList.contains('_active')
-         ? filterMainBody.style.cssText = 'height: 0;'
-         : filterMainBody.style.cssText = `height: ${showingHeight}px`;
+      if (window.innerWidth <= 850) {
+         !filterMainBody.classList.contains('_active')
+            ? filterMainBody.style.cssText = 'height: 0;'
+            : filterMainBody.style.cssText = `height: ${showingHeight}px`;
 
-      filterMobBtn.addEventListener("click", function (e) {
-         const currentHeight = filterMainBody.offsetHeight !== showingHeight ? showingHeight : 0;
-         filterMainBody.classList.toggle('_active');
-         filterMainBody.style.cssText = `height: ${currentHeight}px`;
-      });
+         filterMobBtn.addEventListener("click", function (e) {
+            const currentHeight = filterMainBody.offsetHeight !== showingHeight ? showingHeight : 0;
+            filterMainBody.classList.toggle('_active');
+            filterMainBody.style.cssText = `height: ${currentHeight}px`;
+         });
+      }
    }
    mobFilter();
    // ==============================================

@@ -43,11 +43,11 @@
    &__main-filter {
       flex: 0 0 290px;
       margin-right: 10px;
+      margin-bottom: 20px;
       @media (max-width: 850px) {
          flex: 0 0 100%;
          overflow: hidden;
          transition: all 0.5s ease-in-out 0s;
-         margin-bottom: 20px;
       }
    }
    // .gidrocicles__grid
