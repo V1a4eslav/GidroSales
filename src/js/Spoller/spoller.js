@@ -47,17 +47,19 @@ export function spoller() {
    // Дополнительные параметры фильтра, тут кастомизирую споллер
    function spollerSelect() {
       let selectBlock = document.querySelector('.select-yet');
-      if (selectBlock.length === 0) return;
+      if (selectBlock) {
+         if (selectBlock.length === 0) return;
 
-      let selectBody = selectBlock.querySelector('.select-yet__list');
-      let selectItems = selectBody.querySelectorAll('.select-yet__option');
-      selectItems.forEach(el => {
-         el.addEventListener("click", function (e) {
-            let selectCurent = selectBlock.querySelector('.select-yet__current');
-            let text = this.innerText;
-            selectCurent.innerText = text;
+         let selectBody = selectBlock.querySelector('.select-yet__list');
+         let selectItems = selectBody.querySelectorAll('.select-yet__option');
+         selectItems.forEach(el => {
+            el.addEventListener("click", function (e) {
+               let selectCurent = selectBlock.querySelector('.select-yet__current');
+               let text = this.innerText;
+               selectCurent.innerText = text;
+            });
          });
-      });
+      }
    }
    spollerSelect();
 

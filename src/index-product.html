@@ -138,7 +138,9 @@
 											<div class="product-page__content-form-item">
 												<div class="product-page__content-search-shop">
 													<label for="search-shop">Магазин</label>
-													<input type="search" name="search-shop" id="search-shop">
+													<div class="product-page__content-search-shop-inputwrapper">
+														<input type="search" name="search-shop" id="search-shop">
+													</div>
 												</div>
 											</div>
 											<div class="product-page__content-form-item">
@@ -154,93 +156,148 @@
 												</div>
 											</div>
 										</form>
-										<table class="product-page__content-infoblock">
-											<tr>
-												<th class="product-page__infoblock-label">Адрес</th>
-												<th class="product-page__infoblock-label">Режим работы</th>
-												<th class="product-page__infoblock-label">Доступно</th>
-												<th class="product-page__infoblock-label">Количество</th>
-												<th class="product-page__infoblock-label"></th>
-											</tr>
-											<tr>
-												<td>Москва, ул. Южная 134</td>
-												<td>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
+										<!-- ============================================= -->
+										<div class="product-page__content-infoblock infoblock">
+											<div class="infoblock__row infoblock__row_label">
+												<div class="infoblock__column">
+													<div class="infoblock__label">Адрес</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__label">Режим работы</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__label">Доступно</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__label">Количество</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__label"></div>
+												</div>
+											</div>
+											<div class="infoblock__row">
+												<div class="infoblock__column">
+													<div class="infoblock__text">Москва, ул. Науки 25</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text infoblock__text_timeline">
+														<div class="infoblock__workday">
+															<span>пн-сб:</span>
+															<span>08:00-19:00</span>
+														</div>
+														<div class="infoblock__weekend">
+															<span>вс:</span>
+															<span>09:00-17:00</span>
+														</div>
 													</div>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">В наличии</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">1</div>
+												</div>
+												<div class="infoblock__column">
+													<button class="infoblock__btn">Купить</button>
+												</div>
+											</div>
+											<div class="infoblock__row">
+												<div class="infoblock__column">
+													<div class="infoblock__text">Москва, ул. Южная 134</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text infoblock__text_timeline">
+														<div class="infoblock__workday">
+															<span>пн-сб:</span>
+															<span>08:00-19:00</span>
+														</div>
+														<div class="infoblock__weekend">
+															<span>вс:</span>
+															<span>09:00-17:00</span>
+														</div>
 													</div>
-												</td>
-												<td>В наличии</td>
-												<td>2</td>
-												<td class="product-page__infoblock-btn">Купить</td>
-											</tr>
-											<tr>
-												<td>Санкт-Петербург, ул. Красная 19</td>
-												<td>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">В наличии</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">1</div>
+												</div>
+												<div class="infoblock__column">
+													<button class="infoblock__btn">Купить</button>
+												</div>
+											</div>
+											<div class="infoblock__row">
+												<div class="infoblock__column">
+													<div class="infoblock__text">Санкт-Петербург,
+														ул. Красная 19</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text infoblock__text_timeline">
+														<div class="infoblock__workday">
+															<span>пн-сб:</span>
+															<span>08:00-19:00</span>
+														</div>
+														<div class="infoblock__weekend">
+															<span>вс:</span>
+															<span>09:00-17:00</span>
+														</div>
 													</div>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">Нет в наличии</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">0</div>
+												</div>
+												<div class="infoblock__column">
+													<button class="infoblock__btn">Купить</button>
+												</div>
+											</div>
+											<div class="infoblock__row">
+												<div class="infoblock__column">
+													<div class="infoblock__text">Киев, ул Шевченко 167</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text infoblock__text_timeline">
+														<div class="infoblock__workday">
+															<span>пн-сб:</span>
+															<span>08:00-19:00</span>
+														</div>
+														<div class="infoblock__weekend">
+															<span>вс:</span>
+															<span>09:00-17:00</span>
+														</div>
 													</div>
-												</td>
-												<td>Нет в наличии</td>
-												<td>0</td>
-												<td class="product-page__infoblock-btn">Купить</td>
-											</tr>
-											<tr>
-												<td>Москва, ул. Науки 25</td>
-												<td>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
-													</div>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
-													</div>
-												</td>
-												<td>В наличии</td>
-												<td>1</td>
-												<td class="product-page__infoblock-btn">Купить</td>
-											</tr>
-											<tr>
-												<td>Киев, ул Шевченко 167</td>
-												<td>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
-													</div>
-													<div class="product-page__infoblock-time">
-														<span class="product-page__infoblock-day">пн-сб:</span>
-														<span class="product-page__infoblock-hour">08:00-19:00</span>
-													</div>
-												</td>
-												<td>Нет в наличии</td>
-												<td>0</td>
-												<td class="product-page__infoblock-btn">Купить</td>
-											</tr>
-										</table>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">Нет в наличии</div>
+												</div>
+												<div class="infoblock__column">
+													<div class="infoblock__text">0</div>
+												</div>
+												<div class="infoblock__column">
+													<button class="infoblock__btn">Купить</button>
+												</div>
+											</div>
+										</div>
+										<!-- ============================================= -->
+
 									</div>
 								</div>
-								<div class="product-page__tabs-content-item _tabs-block">444</div>
-								<div class="product-page__tabs-content-item _tabs-block">555</div>
-								<div class="product-page__tabs-content-item _tabs-block">666</div>
 							</div>
+							<div class="product-page__tabs-content-item _tabs-block">444</div>
+							<div class="product-page__tabs-content-item _tabs-block">555</div>
+							<div class="product-page__tabs-content-item _tabs-block">666</div>
 						</div>
-
 					</div>
-				</div>
-			</section>
 
-		</main>
-		@include('_footer.html',{})
+				</div>
+	</div>
+	</section>
+
+	</main>
+	@include('_footer.html',{})
 	</div>
 	@include('_js.html',{})
 </body>
