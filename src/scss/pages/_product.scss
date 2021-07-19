@@ -11,7 +11,7 @@
    }
    // .product-page__tabs
    &__tabs {
-      margin-bottom: 100px;
+      @include adaptiv-value("margin-bottom", 100, 40, 1);
    }
    // .product-page__tabs-btns
    &__tabs-btns {
@@ -19,14 +19,24 @@
       align-items: center;
       justify-content: space-around;
       background: #f0f0f4;
-      margin-bottom: 50px;
+      margin: 0 0 50px 0;
+      @media (max-width: $md2+px) {
+         justify-content: flex-start;
+         overflow: auto;
+      }
    }
    // .product-page__tabs-btn-item
    &__tabs-btn-item {
       font-size: 20px;
       cursor: pointer;
-      padding: 23px 5px;
+      padding: 23px 0px;
       position: relative;
+      white-space: nowrap;
+      @media (max-width: $md2+px) {
+         & + .product-page__tabs-btn-item {
+            margin-left: 20px;
+         }
+      }
       &._active {
          &::after {
             content: "";
@@ -60,6 +70,9 @@
       align-items: center;
       margin-bottom: 50px;
       flex-wrap: wrap;
+      @media (max-width: $md2+px) {
+         margin-bottom: 25px;
+      }
    }
    //product-page__content-form-item
    &__content-form-item {
@@ -155,6 +168,29 @@
    }
    // .product-page__content-infoblock
    &__content-infoblock {
+   }
+   //.product-page__recomemdation
+   &__recomemdation {
+      margin-bottom: 20px;
+      .recomendation-products__title {
+         @media (max-width: $md4+px) {
+            text-align: center;
+         }
+      }
+   }
+   //.product-page__recomemdation-btn
+   &__recomemdation-btn {
+      display: none;
+      @media (max-width: $md4+px) {
+         display: block;
+         margin-bottom: 80px;
+         background: #f0f0f4;
+         height: 55px;
+         width: 100%;
+         font-size: 15px;
+         letter-spacing: 0.12em;
+         text-transform: uppercase;
+      }
    }
 }
 
@@ -499,11 +535,5 @@
       padding: 10px 40px;
       font-size: 13px;
       letter-spacing: 0.12em;
-   }
-   // .infoblock__workday
-   &__workday {
-   }
-   // .infoblock__weekend
-   &__weekend {
    }
 }
