@@ -18,9 +18,11 @@ import { spoller } from './Spoller/spoller';
 import { noUiSliderMy } from './noUiSliderMy/noUiSliderMy';
 import { selects } from './selects/selects';
 import { toggleGrid } from './toggleGrid/toggleGrid';
+import { headerScroll } from './headerFunc/headerScroll';
 
 window.addEventListener('load', () => {
    burger();
+   headerScroll();
    headerBottomClick();
    mainBannerSwiper();
    sliders();
@@ -31,3 +33,6 @@ window.addEventListener('load', () => {
    selects();
    toggleGrid();
 });
+
+
+

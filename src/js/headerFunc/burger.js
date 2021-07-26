@@ -6,7 +6,7 @@ export function burger() {
       burgerIcon.addEventListener("click", () => {
          burgerIcon.classList.toggle('_active');
          menuAside.classList.toggle('_active');
-         body.classList.toggle('body-lock');
+         body.classList.toggle('_lock');
       });
    }
 }
